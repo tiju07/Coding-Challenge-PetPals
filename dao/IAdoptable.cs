@@ -4,8 +4,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using PetPals.entity;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public interface IAdoptable
     {

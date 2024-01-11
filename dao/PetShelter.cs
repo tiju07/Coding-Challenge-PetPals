@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PetPals.entity;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public class PetShelter
     {
@@ -26,7 +27,7 @@ namespace PetPals.entity
             return false;
         }
 
-        public bool RemovePet(Pet pet) {  return pets.Remove(pet); }
+        public bool RemovePet(Pet pet) { return pets.Remove(pet); }
         public void ListAvailablePets()
         {
             foreach (Pet pet in pets)

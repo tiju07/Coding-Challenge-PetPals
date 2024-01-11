@@ -5,7 +5,7 @@ using System;
 using System.Collections;
 using System.Runtime.InteropServices;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public abstract class Donation
     {
@@ -13,7 +13,7 @@ namespace PetPals.entity
         private PetShelter donatedTo;
         public string DonorName { get => donorName; set { donorName = value; } }
         public PetShelter DonatedTo { get => donatedTo; set { donatedTo = value; } }
-        public Donation(string donorName, PetShelter donatedTo) 
+        public Donation(string donorName, PetShelter donatedTo)
         {
             DonorName = donorName;
             DonatedTo = donatedTo;
@@ -35,7 +35,7 @@ namespace PetPals.entity
                 cmd = new SqlCommand(q, conn);
                 int dr = cmd.ExecuteNonQuery();
                 if (dr > 0) { Console.WriteLine("Successfully added donation to database."); return 1; }
-                else {Console.WriteLine("Could not add donation details to the database."); return 0;}
+                else { Console.WriteLine("Could not add donation details to the database."); return 0; }
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); return 0; }
             finally

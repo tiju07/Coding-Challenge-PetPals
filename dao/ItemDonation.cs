@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public class ItemDonation : Donation
     {
@@ -15,7 +15,7 @@ namespace PetPals.entity
         public ItemDonation(string donorName, PetShelter donatedTo, string itemType) : base(donorName, donatedTo)
         {
             ItemType = itemType;
-            this.RecordDonation();
+            RecordDonation();
         }
 
         public override bool RecordDonation()

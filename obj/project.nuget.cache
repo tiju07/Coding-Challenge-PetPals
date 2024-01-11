@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x9btrbo+8TutukcPBx2kCK5X1VIisFGyUSNb3YgQhT+Qds3kyz7dutLaRTjxYW/VhPG3+nPc2Y77o8IKggdGxQ==",
+  "dgSpecHash": "9wgdmfBP1uaUGd28w8zE2qG7aOFQRz7J7uzXg+oaazt1t1BcPQBIv6gN/YZxRBJjO3hBBtTP/yLyeHAzkuH3BA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Hexaware Training\\Technical Training\\Assignments\\C# Solutions\\PetPals\\PetPals.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\Hexaware Training\\Technical Training\\Assignments\\PetPals\\PetPals.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

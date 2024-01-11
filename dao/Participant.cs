@@ -5,8 +5,9 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using PetPals.entity;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public class Participant
     {
@@ -20,7 +21,7 @@ namespace PetPals.entity
         {
             Name = name;
             Type = type;
-            if(adoptions == null) adoptions = new List<Pet>();
+            if (adoptions == null) adoptions = new List<Pet>();
         }
 
         public void AdoptPet(Pet pet)

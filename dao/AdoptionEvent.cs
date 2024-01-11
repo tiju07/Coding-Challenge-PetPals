@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using PetPals.entity;
 using PetPals.util;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public class AdoptionEvent : IAdoptable
     {
@@ -31,14 +32,14 @@ namespace PetPals.entity
         }
         public bool RegisterParticipant(Participant participant)
         {
-            if(participant != null)
+            if (participant != null)
             {
                 participants.Add(participant);
                 return true;
             }
             return false;
         }
-    
+
         public static void GetAllAdoptionEventDetails()
         {
             SqlConnection conn = null!;
@@ -59,7 +60,7 @@ namespace PetPals.entity
                     {
                         Console.WriteLine(columns[i] + ": " + data[i]);
                     }
-                    Console.WriteLine(new String('-', 50));
+                    Console.WriteLine(new string('-', 50));
                 }
                 dr.Close();
             }
@@ -69,7 +70,7 @@ namespace PetPals.entity
                 conn.Close();
             }
         }
-    
+
         public static void RegisterForAnEvent(string participantName, string participantType, int eventID)
         {
             SqlConnection conn = null!;

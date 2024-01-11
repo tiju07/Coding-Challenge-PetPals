@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetPals.entity
+namespace PetPals.dao
 {
     public class CashDonation : Donation
     {
@@ -24,11 +24,11 @@ namespace PetPals.entity
                 else amount = value;
             }
         }
-        public CashDonation(string donorName, PetShelter donatedTo, DateTime donationDate,double amount) : base(donorName, donatedTo)
+        public CashDonation(string donorName, PetShelter donatedTo, DateTime donationDate, double amount) : base(donorName, donatedTo)
         {
             Amount = amount;
             DonationDate = donationDate;
-            this.RecordDonation();
+            RecordDonation();
         }
 
         public override bool RecordDonation()

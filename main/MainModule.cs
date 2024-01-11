@@ -1,13 +1,13 @@
 ﻿using PetPals.entity;
-using System.Collections;
+using PetPals.dao;
 
-namespace PetPals
+namespace PetPals.Main
 {
-    internal class Program
+    internal class MainModule
     {
         static void Main(string[] args)
         {
-            /*
+            
             Dog dog1 = new Dog("Name1", 2, "Breed1", "SubBreed1");
             Dog dog2 = new Dog("Name2", 8, "Breed2", "SubBreed2");
             Dog dog3 = new Dog("Name3", 4, "Breed1", "SubBreed2");
@@ -43,13 +43,13 @@ namespace PetPals
             event1.Adopt(dog2, shelter1);
             event1.Adopt(cat1, shelter1);
             event1.Adopt(cat2, shelter1);
-            */
+            
 
             //Database Connectivity
-            //Pet.GetAllPets();
-            //Donation.AddDonation("Donor1", 56400, 5);
-            //AdoptionEvent.GetAllAdoptionEventDetails();
-            //AdoptionEvent.RegisterForAnEvent("Participant1", "Adopter", 13);
+            Pet.GetAllPets();
+            Donation.AddDonation("Donor1", 56400, 5);
+            AdoptionEvent.GetAllAdoptionEventDetails();
+            AdoptionEvent.RegisterForAnEvent("Participant1", "Adopter", 1);
         }
     }
 }
